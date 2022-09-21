@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <title>Cryptography - 1</title>
+</head>
+
+<body>
+    <div style="margin: 5%;">
+        <h2>Метод Віженера</h2>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Секретне повідомлення / зашифроване
+                повідомлення:</label>
+            <textarea class="form-control" id="secretMessage" rows="3"></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Ключ</label>
+            <input type="text" class="form-control" id="key" />
+        </div>
+        <button type="button" id="btn1" class="btn btn-danger">Зашифрувати</button>
+        <button type="button" id="btn1-2" class="btn btn-success">Розшифрувати</button>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Оригінал</th>
+                    <th scope="col">Зашифрований</th>
+                    <th scope="col">Ключ</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th id="original-table"></th>
+                    <td id="cipher-table"></td>
+                    <td id="key-table"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <div style="margin: 5%;">
+        <h2>Шифр Цезаря</h2>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Секретне повідомлення / зашифроване
+                повідомлення:</label>
+            <textarea class="form-control" id="secretMessage2" rows="3"></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Ключ</label>
+            <input type="text" class="form-control" id="key2" />
+        </div>
+        <button type="button" id="btn2" class="btn btn-danger">Зашифрувати</button>
+        <button type="button" id="btn2-1" class="btn btn-success">Розшифрувати</button>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Оригінал</th>
+                    <th scope="col">Зашифрований</th>
+                    <th scope="col">Ключ</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th id="original-table2"></th>
+                    <td id="cipher-table2"></td>
+                    <td id="key-table2"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+    <script src="script2.js"></script>
+</body>
+
+</html>
